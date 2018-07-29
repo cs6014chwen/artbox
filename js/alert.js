@@ -3,6 +3,8 @@ $(document).ready(function () {
   var birthdayDate = $("#q_birthday input:text");
       imgSite = $("#q_site :selected");
       roomEC = $("#roomNumber input:text");
+      poeole = $("#peopleNumber input:text");
+      food = $("#cocoEat input[name=coco]:checked");
   
   $("#q_birthday").submit(function(){
     var date = $("input:text", this).val();
@@ -43,13 +45,13 @@ $(document).ready(function () {
       $("#questionTwo").removeClass("show");
       $("#questionOne").addClass("show");
       birthdayDate.val("");
-      imgSire.val("");
+      imgSite.val("");
     }
   });
 
   $("#roomNumber").submit(function () {
     var number = $("input:text", this).val();
-    if (number == "727") {
+    if (number == 727) {
       swal(
         '好棒!',
         '阿母加法算對了',
@@ -66,7 +68,7 @@ $(document).ready(function () {
       $("#questionThree").removeClass("show");
       $("#questionOne").addClass("show");
       birthdayDate.val("");
-      imgSire.val("");
+      imgSite.val("");
       roomEC.val("");
     }
   });
@@ -79,19 +81,63 @@ $(document).ready(function () {
         '全部算對囉!',
         'success'
       );
-      $("#questionThree").removeClass("show");
-      $("#questionFour").addClass("show");
+      $("#questionFour").removeClass("show");
+      $("#questionFive").addClass("show");
     } else {
       swal(
         '不對喔!',
-        '再仔細看看吧!',
+        '你確定都是真正的嗎?再仔細看看吧!',
         'error'
       );
       $("#questionFour").removeClass("show");
       $("#questionOne").addClass("show");
       birthdayDate.val("");
-      imgSire.val("");
+      imgSite.val("");
       roomEC.val("");
+      people.val("");
+    }
+  });
+  $("#cocoEat").submit(function () {
+    var number = $("input[name=coco]:checked", this).val();
+    if (number == "pea") {
+      swal(
+        '恭喜!',
+        '您果然關心兒子',
+        'success'
+      );
+      $("#questionFive").removeClass("show");
+      $("#questionSix").addClass("show");
+    } else {
+      swal(
+        '小關不吃喔!',
+        '小關在你背後看著你',
+        'error'
+      );
+      $("#questionFive").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSite.val("");
+      roomEC.val("");
+      people.val("");
+      food.val("");
+    }
+  });
+  $("#connection").submit(function () {
+    var number = $("input:text", this).val();
+    if (number == 9487) {
+      swal(
+        '您真是太厲害了!',
+        '居然答對了',
+        'success'
+      );
+      $("#questionSix").removeClass("show");
+      $("#gameEnd").addClass("show");
+    } else {
+      swal(
+        '不對喔!',
+        '請把圖連起來看看',
+        'error'
+      );
     }
   });
   
