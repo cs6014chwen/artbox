@@ -87,7 +87,7 @@ $(document).ready(function () {
         '再仔細看看吧!',
         'error'
       );
-      $("#questionThree").removeClass("show");
+      $("#questionFour").removeClass("show");
       $("#questionOne").addClass("show");
       birthdayDate.val("");
       imgSire.val("");
