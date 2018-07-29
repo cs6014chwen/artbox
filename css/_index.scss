@@ -1,0 +1,357 @@
+.clo-bg1{
+  background-color: #5640b9;
+}
+.clo-bg2 {
+  background-color: #8d27ed;
+}
+.clo-bg3 {
+  background-color: #a427ed;
+}
+.index-body {
+  background: #8f31ab;
+  background: -moz-linear-gradient(180deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
+  background: -webkit-linear-gradient(180deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
+  background: linear-gradient(-180deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.vision{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.index-title{
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  .title{
+    padding-top: 15vh;
+    width: 100%;
+    box-sizing: border-box;
+
+    img {
+      width: 40%;
+    }
+  }
+  .title-bottom{
+    position: relative;
+    transform: translate(8px, -8px);
+    animation-name: titleBottom;
+    animation-duration: 2S;
+  }
+  .title-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: titleTop;
+    animation-duration: 1s;
+    animation-delay:2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+  }
+}
+.cloud-group {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  .cloud-ani{
+    animation-name: cloudAni;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .clo-top{
+    height: 5vh;
+    width: 20%;
+    border-radius: 5vh 5vh 5px 5vh;
+  }
+  .clo-bottom {
+    height: 5vh;
+    width: 20%;
+    border-radius: 5px 5vh 5vh 5vh;
+    transform: translate(20%, 0);
+  }
+  .cloud1 {
+    padding-top: 2%;
+    transform: translate(30%, 0);
+    opacity: 0.6;
+    animation-name: ani-show;
+    animation-duration: 3s;
+  }
+  .cloud2 {
+    padding-top: 2%;
+    transform: translate(-60%, 0);
+    opacity: 0.7;
+    animation-name: ani-show;
+    animation-duration: 3s;
+  }
+  .cloud3 {
+    padding-top: 5%;
+    transform: translate(15%, 0);
+    opacity: 0.6;
+    animation-name: ani-show;
+    animation-duration: 3s;
+  }
+  .cloud4 {
+    padding-top: 2%;
+    transform: translate(-30%, 0);
+    opacity: 0.6;
+    animation-name: ani-show;
+    animation-duration: 3s;
+    .clo-top {
+      border-radius: 5vh;
+    }
+
+    .clo-bottom {
+      transform: translate(-20%, 0);
+      border-radius: 5vh;
+    }
+  }
+}
+.friends{
+  width: 100%;
+  .friend{
+    position: absolute;
+    animation-name: showBottom;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    img{
+      width: 100%;
+    }
+  }
+  .arwen{
+    width: 23%;
+    left: -2%;
+    bottom: -10%;
+    animation-delay:3s;
+  }
+  .chun {
+    width: 16%;
+    left: 18%;
+    bottom: -8%;
+    animation-delay:3.2s;
+  }
+  .ec {
+    width: 28%;
+    right: 2%;
+    bottom: -18%;
+    animation-delay:3.6s;
+  }
+  .coco {
+    width: 10%;
+    right: 28%;
+    bottom: 15%;
+    animation-name: showBottom;
+    animation-duration: 1s;
+    animation-delay:4s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.enter-box {
+  margin-top: -10%;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  @media (min-width: 900px){
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  .btn-enter{
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+.white-bg {
+  display: none;
+  width: 100%;
+  img {
+    width: 100.5%;
+    margin-left: -1px;
+  }
+}
+
+.btn-index {
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border-radius: 22px;
+    border: 2px solid #ffffff;
+    opacity: 0;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-ani{
+  animation-name: showBottom;
+  animation-duration: 1s;
+  animation-delay:5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+.portrait {
+  .index-body {
+    background: #8f31ab;
+    background: -moz-linear-gradient(35deg, #361b81 0%, #8f31ab 70%, #8f31ab 100%);
+    background: -webkit-linear-gradient(35deg, #361b81 0%, #8f31ab 70%, #8f31ab 100%);
+    background: linear-gradient(-135deg, #361b81 0%, #8f31ab 70%, #8f31ab 100%);
+  }
+  .vision {
+    min-height: 80vh;
+  }
+  .index-title{
+    .title {
+      padding-top: 25%;
+      width: 100%;
+      box-sizing: border-box;
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .cloud-group {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    .cloud-ani {
+      animation-name: cloudAni;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    .clo-top {
+      height: 20px;
+      width: 25%;
+      border-radius: 10px 10px 5px 10px;
+    }
+    .clo-bottom {
+      height: 20px;
+      width: 25%;
+      border-radius: 5px 10px 10px 10px;
+      transform: translate(20%, 0);
+    }
+    .cloud1 {
+      padding-top: 10%;
+      transform: translate(30%, 0);
+      opacity: 0.6;
+      animation-name: ani-show;
+      animation-duration: 3s;
+    }
+    .cloud2 {
+      padding-top: 10%;
+      transform: translate(-60%, 0);
+      opacity: 0.7;
+      animation-name: ani-show;
+      animation-duration: 3s;
+    }
+    .cloud3 {
+      padding-top: 25%;
+      transform: translate(15%, 0);
+      opacity: 0.6;
+      animation-name: ani-show;
+      animation-duration: 3s;
+    }
+    .cloud4 {
+      padding-top: 3%;
+      transform: translate(-30%, 0);
+      opacity: 0.6;
+      animation-name: ani-show;
+      animation-duration: 3s;
+      .clo-top {
+        border-radius: 10px;
+      }
+      .clo-bottom {
+        transform: translate(-20%, 0);
+      }
+    }
+  }
+  .friends {
+    width: 100%;
+    .friend {
+      position: absolute;
+      img {
+        width: 100%;
+      }
+    }
+    .arwen {
+      width: 32%;
+      left: 8%;
+      bottom: 0%;
+    }
+    .chun {
+      width: 26%;
+      left: 35%;
+      bottom: 0%;
+    }
+    .ec {
+      width: 45%;
+      right: 3%;
+      bottom: 0%;
+    }
+    .coco {
+      width: 15%;
+      right: 50%;
+      bottom: 42%;
+    }
+  }
+  .white-bg {
+    display: block;
+  }
+  .enter-box{
+    margin-top: -40%;
+    .btn-enter {
+      background-color: #fff;
+      min-height: 20vh;
+      padding: 2% 0 12% 0;
+      margin-top: -5px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  }
+  .btn-index {
+    background-color: $color-primary;
+    color: #fff;
+    &:before {
+      border: 2px solid $color-primary;
+      opacity: 1;
+      animation-name : flashing;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+}

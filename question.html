@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ARTBOX</title>
+  <link rel="stylesheet" href="css/sweetalert2.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  <script src="js/sweetalert2.js"></script>
+</head>
+
+<body>
+<div id="questionOne" class="q-box show">
+  <div class="inbox">
+    <form id="q_birthday" onsubmit="return false;">
+      <h2>1. 請輸入您的生日</h2>
+      <input class="inputBox" type="text" name="birthday" id="birthdayLeo" placeholder="MMDD" value="">
+      <div class="submitBtn">
+        <input type="submit" value="確認送出">
+      </div>
+    </form>
+  </div>
+</div>
+<div id="questionTwo" class="q-box">
+  <div class="inbox">
+    <form id="q_site" onsubmit="return false;">
+      <h2>2.請選出此張圖片的地點</h2>
+      <img class="q_img" src="https://images.plurk.com/w9elWpeoP9PChwa6JxnI.jpg" alt="">
+      <select name="imgSite">
+        <option value="1">天堂</option>
+        <option value="2">地球</option>
+        <option value="3">地獄</option>
+        <option value="4">藝世界</option>
+        <option value="5">阿姆的變態世界</option>
+      </select>
+      <div class="submitBtn">
+        <input type="submit" value="確認送出">
+      </div>
+    </form>
+  </div>
+</div>
+<div id="questionThree" class="q-box">
+  <div class="inbox">
+    <form id="chun" onsubmit="return false;">
+      <h2>1. 請輸入吋純的心裡話</h2>
+      <input class="inputBox" type="text" placeholder="嘿嘿嘿" value="">
+      <div class="submitBtn">
+        <input type="submit" value="確認送出">
+      </div>
+    </form>
+  </div>
+</div>
+<div id="questionFour" class="q-box">你成功了</div>
+  <script src="js/alert.js"></script>
+</body>
+
+</html>
