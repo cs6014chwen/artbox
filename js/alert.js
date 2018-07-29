@@ -2,6 +2,7 @@
 $(document).ready(function () {
   var birthdayDate = $("#q_birthday input:text");
       imgSite = $("#q_site :selected");
+      roomEC = $("#roomNumber input:text");
   
   $("#q_birthday").submit(function(){
     var date = $("input:text", this).val();
@@ -46,12 +47,12 @@ $(document).ready(function () {
     }
   });
 
-  $("#chun").submit(function () {
-    var chunText = $("input:text", this).val();
-    if (chunText == "哈哈哈哈") {
+  $("#roomNumber").submit(function () {
+    var number = $("input:text", this).val();
+    if (number == "727") {
       swal(
-        'Good job!',
-        'You clicked the button!',
+        '好棒!',
+        '阿母加法算對了',
         'success'
       );
       $("#questionThree").removeClass("show");
@@ -66,6 +67,31 @@ $(document).ready(function () {
       $("#questionOne").addClass("show");
       birthdayDate.val("");
       imgSire.val("");
+      roomEC.val("");
+    }
+  });
+
+  $("#peopleNumber").submit(function () {
+    var number = $("input:text", this).val();
+    if (number == "17") {
+      swal(
+        '您真是太厲害了!',
+        '全部算對囉!',
+        'success'
+      );
+      $("#questionThree").removeClass("show");
+      $("#questionFour").addClass("show");
+    } else {
+      swal(
+        '不對喔!',
+        '再仔細看看吧!',
+        'error'
+      );
+      $("#questionThree").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSire.val("");
+      roomEC.val("");
     }
   });
   

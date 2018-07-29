@@ -7,7 +7,7 @@ body { line-height: 1; color: #fff; }
 
 h2 { font-size: 1.2rem; line-height: 2; color: #333; }
 
-p { color: #333; }
+p, span { color: #333; }
 
 ol, ul { list-style: none; }
 
@@ -148,6 +148,10 @@ select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px soli
 
 .portrait .btn-index:before { border: 2px solid #8f31ab; opacity: 1; -webkit-animation-name: flashing; animation-name: flashing; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 
+.focus-f { color: #8f31ab; font-weight: 600; }
+
+.point-box { display: inline-block; padding: 5px; margin: 5px; border: 1px solid #8f31ab; border-radius: 5px; font-size: 1.5em; }
+
 .q-box { display: none; width: 100%; text-align: center; height: 100vh; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .q-box .inbox { margin: 0 auto; text-align: center; }
@@ -164,7 +168,7 @@ select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px soli
 
 .q-box h2 { padding-top: 3%; font-weight: 600; padding-bottom: 5%; }
 
-.q-box .q-content { width: 100%; padding: 8%; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.q-box .q-content { width: 100%; padding: 3% 8%; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .q-box .q_img { width: 100%; }
 

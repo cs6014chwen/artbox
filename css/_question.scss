@@ -1,3 +1,15 @@
+.focus-f{
+  color: $color-primary;
+  font-weight: 600;
+}
+.point-box{
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
 
 .q-box {
   display: none;
@@ -43,7 +55,7 @@
   }
   .q-content{
     width: 100%;
-    padding: 8%;
+    padding: 3% 8%;
     box-sizing: border-box;
   }
   .q_img{
