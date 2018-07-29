@@ -1,12 +1,14 @@
+
 $(document).ready(function () {
-  var all_Inputs = $("input[type=textbox]");
+  var birthdayDate = $("#q_birthday input:text");
+      imgSite = $("#q_site :selected");
   
   $("#q_birthday").submit(function(){
     var date = $("input:text", this).val();
     if (date == "0805") {
       swal(
-        'Good job!',
-        'You clicked the button!',
+        '好棒!',
+        '你答出來了耶!',
         'success'
       );
       $("#questionOne").removeClass("show");
@@ -14,10 +16,10 @@ $(document).ready(function () {
     } else{
       swal(
         '哈哈哈哈',
-        '打錯囉!',
+        '你不知道你的生日嗎?',
         'error'
       );
-      $("input:text", this).val("");
+      birthdayDate.val("");
     }
   });
 
@@ -25,21 +27,22 @@ $(document).ready(function () {
     var site = $(":selected", this).val();
     if (site == 5) {
       swal(
-        'Good job!',
-        'You clicked the button!',
+        '好棒!',
+        '你居然記得耶!',
         'success'
       );
       $("#questionTwo").removeClass("show");
       $("#questionThree").addClass("show");
     } else {
       swal(
-        '哈哈哈哈',
-        '從第一個開始喔',
+        '嘿嘿嘿',
+        '睡太多不記得了嗎?',
         'error'
       );
       $("#questionTwo").removeClass("show");
       $("#questionOne").addClass("show");
-      all_Inputs.val("");
+      birthdayDate.val("");
+      imgSire.val("");
     }
   });
 
@@ -61,7 +64,8 @@ $(document).ready(function () {
       );
       $("#questionThree").removeClass("show");
       $("#questionOne").addClass("show");
-      all_Inputs.val("");
+      birthdayDate.val("");
+      imgSire.val("");
     }
   });
   

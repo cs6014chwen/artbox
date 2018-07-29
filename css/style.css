@@ -22,7 +22,7 @@ blockquote, q { quotes: "" ""; }
 
 input { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px solid #999; border-radius: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Microsoft JhengHei" !important; }
 
-select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px solid #999; border-radius: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Microsoft JhengHei" !important; }
+select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px solid #999; background-color: #fff; border-radius: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Microsoft JhengHei" !important; }
 
 .clo-bg1 { background-color: #5640b9; }
 
