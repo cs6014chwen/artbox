@@ -36,29 +36,41 @@
       }
     }
   }
+  h2{
+    padding-top: 3%;
+    font-weight: 600;
+    padding-bottom: 5%;
+  }
+  .q-content{
+    width: 100%;
+    padding: 8%;
+    box-sizing: border-box;
+  }
   .q_img{
     width:100%;
   }
-  .inputBox{
-    font-size: 1rem;
-    padding: 5px;
-    color: #333333;
-    display: inline-block;
-    max-width: 320px;
+  .input-box{
+    width: 100%;
+  }
+  .select-box{
+    width: 100%;
+    margin-top: 20px;
   }
   .submitBtn{
     display: block;
     text-align: center;
     margin-top: 20px;
+    width: 100%;
     input{
+      width: 100%;
       background: #8f31ab;
       background: -moz-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
       background: -webkit-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
-      background: linear-gradient(-90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
+      background: linear-gradient(-270deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
       color: #ffffff;
       padding: 5px  10px;
       margin: 0 auto;
-      opacity: 0.8;
+      opacity: 0.9;
       cursor: pointer;
       &:hover{
         opacity: 1;

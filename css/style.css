@@ -1,11 +1,13 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; text-decoration: none; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; text-decoration: none; font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif; }
 
 /* remember to define focus styles! */
 :focus { outline: 0; }
 
-body { line-height: 1; color: #fff; font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif; }
+body { line-height: 1; color: #fff; }
 
 h2 { font-size: 1.2rem; line-height: 2; color: #333; }
+
+p { color: #333; }
 
 ol, ul { list-style: none; }
 
@@ -17,6 +19,10 @@ caption, th, td { text-align: left; font-weight: normal; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 
 blockquote, q { quotes: "" ""; }
+
+input { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px solid #999; border-radius: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Microsoft JhengHei" !important; }
+
+select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px solid #999; border-radius: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Microsoft JhengHei" !important; }
 
 .clo-bg1 { background-color: #5640b9; }
 
@@ -156,13 +162,19 @@ blockquote, q { quotes: "" ""; }
 
 .q-box .q-header .title .number { float: right; font-weight: 800; font-size: 7vw; }
 
+.q-box h2 { padding-top: 3%; font-weight: 600; padding-bottom: 5%; }
+
+.q-box .q-content { width: 100%; padding: 8%; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 .q-box .q_img { width: 100%; }
 
-.q-box .inputBox { font-size: 1rem; padding: 5px; color: #333333; display: inline-block; max-width: 320px; }
+.q-box .input-box { width: 100%; }
 
-.q-box .submitBtn { display: block; text-align: center; margin-top: 20px; }
+.q-box .select-box { width: 100%; margin-top: 20px; }
 
-.q-box .submitBtn input { background: #8f31ab; background: -moz-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: -webkit-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: -webkit-gradient(linear, right top, left top, from(#361b81), color-stop(50%, #8f31ab), to(#8f31ab)); background: -webkit-linear-gradient(right, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: -o-linear-gradient(right, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: linear-gradient(-90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%); color: #ffffff; padding: 5px  10px; margin: 0 auto; opacity: 0.8; cursor: pointer; }
+.q-box .submitBtn { display: block; text-align: center; margin-top: 20px; width: 100%; }
+
+.q-box .submitBtn input { width: 100%; background: #8f31ab; background: -moz-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: -webkit-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: -webkit-gradient(linear, left top, right top, from(#361b81), color-stop(50%, #8f31ab), to(#8f31ab)); background: -webkit-linear-gradient(left, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: -o-linear-gradient(left, #361b81 0%, #8f31ab 50%, #8f31ab 100%); background: linear-gradient(-270deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%); color: #ffffff; padding: 5px  10px; margin: 0 auto; opacity: 0.9; cursor: pointer; }
 
 .q-box .submitBtn input:hover { opacity: 1; }
 

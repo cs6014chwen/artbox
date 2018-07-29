@@ -16,6 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-family: inherit;
   vertical-align: baseline;
   text-decoration: none;
+  font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
 }
 /* remember to define focus styles! */
 :focus {
@@ -24,7 +25,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height: 1;
 	color: #fff;
-	font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
 }
 h2{
   font-size: 1.2rem;
@@ -54,6 +54,20 @@ blockquote, q {
 	quotes: "" "";
 }
 input{
-  padding: 10px;
-  height
+  font-size: 1.2em;
+  padding: 5px 15px;
+  line-height: 1.5;
+  border: 1px solid #999;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-family: "Microsoft JhengHei" !important;
+}
+select{
+  font-size: 1.2em;
+  padding: 5px 15px;
+  line-height: 1.5;
+  border: 1px solid #999;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-family: "Microsoft JhengHei" !important;
 }
