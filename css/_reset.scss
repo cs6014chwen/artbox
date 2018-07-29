@@ -28,7 +28,11 @@ body {
 }
 h2{
   font-size: 1.2rem;
-  line-height: 2;
+	line-height: 2;
+	color: #333;
+}
+p{
+  color:#333;
 }
 ol, ul {
 	list-style: none;
@@ -48,4 +52,8 @@ q:before, q:after {
 }
 blockquote, q {
 	quotes: "" "";
+}
+input{
+  padding: 10px;
+  height
 }

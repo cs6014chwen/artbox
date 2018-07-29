@@ -5,11 +5,11 @@
   }
   95% {
     opacity: 1;
-    transform: translate(8px, 0);
+    transform: translate(1.5%, 0);
   }
   100% {
     opacity: 1;
-    transform: translate(8px, -8px);
+    transform: translate(1.5%, -1.5%);
   }
 }
 @keyframes titleTop{

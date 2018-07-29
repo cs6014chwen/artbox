@@ -4,12 +4,37 @@
   width: 100%;
   text-align: center;
   height: 100vh;
-  padding: 10%;
   box-sizing: border-box;
   .inbox{
     margin: 0 auto;
     text-align: center;
-
+  }
+  .q-header{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    .q-header-bg{
+      width: 100%;
+    }
+    .title{
+      width: 100%;
+      position: absolute;
+      padding: 7% 10%;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      .q-img{
+        float: left;
+        width: 50%;
+        height: auto;
+      }
+      .number{
+        float: right;
+        font-weight: 800;
+        font-size: 7vw;
+      }
+    }
   }
   .q_img{
     width:100%;
@@ -26,8 +51,10 @@
     text-align: center;
     margin-top: 20px;
     input{
-      background-color: transparent;
-      border: 1px solid #ffffff;
+      background: #8f31ab;
+      background: -moz-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
+      background: -webkit-linear-gradient(90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
+      background: linear-gradient(-90deg, #361b81 0%, #8f31ab 50%, #8f31ab 100%);
       color: #ffffff;
       padding: 5px  10px;
       margin: 0 auto;
