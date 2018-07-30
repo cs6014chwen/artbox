@@ -138,34 +138,40 @@ $(document).ready(function () {
         '請把圖連起來看看',
         'error'
       );
-      $("#questionSix").removeClass("show");
-      $("#questionOne").addClass("show");
-      birthdayDate.val("");
-      imgSite.val("");
-      roomEC.val("");
-      food.val("");
+      // $("#questionSix").removeClass("show");
+      // $("#questionOne").addClass("show");
+      // birthdayDate.val("");
+      // imgSite.val("");
+      // roomEC.val("");
+      // food.val("");
     }
   });
   $("#gameEnd").submit(function () {
     var number = $("input:text", this).val();
-    if (number == 125) {
+    if (number == 123) {
       swal(
         '您真是太厲害了!',
         '快去開行李箱吧!',
         'success'
       );
-      $("#questionSix").removeClass("show");
-      $("#gameEnd").addClass("show");
+    } else if (number == 635){
+      swal(
+        '哈哈哈',
+        '你居然相信小關!',
+        'error'
+      );
+    } else if (number == 277) {
+      swal(
+        '哈哈哈',
+        '吋存從頭到尾都說謊阿',
+        'error'
+      );
     } else {
       swal(
         '不對喔!',
         '回去前面看看吧!',
         'error'
       );
-      birthdayDate.val("");
-      imgSite.val("");
-      roomEC.val("");
-      food.val("");
     }
   });
 });
