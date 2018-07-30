@@ -1,3 +1,5 @@
+.question-body{
+}
 .focus-f{
   color: $color-primary;
   font-weight: 600;
@@ -143,4 +145,94 @@
 }
 .show {
   display: block;
+}
+
+.end-box{
+  background: #8f31ab;
+  background: -moz-linear-gradient(35deg, #361b81 0%, #8f31ab 70%, #8f31ab 100%);
+  background: -webkit-linear-gradient(35deg, #361b81 0%, #8f31ab 70%, #8f31ab 100%);
+  background: linear-gradient(-135deg, #361b81 0%, #8f31ab 70%, #8f31ab 100%);
+  overflow: scroll;
+  h2{
+    color: #fff;
+  }
+  .end-content{
+    width: 100%;
+    padding: 3% 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .message{
+    width: 100%;
+    text-align: left;
+  }
+  .message-icon{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #b963d3;
+    overflow: hidden;
+    vertical-align: top;
+    img{
+      width: 100%;
+    }
+  }
+  .message-box{
+    max-width: calc(100% - 80px);
+    position: relative;
+    border-radius: 5px;
+    margin: 5px 15px;
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 10px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.8);
+    vertical-align: top;
+  }
+}
+.left-mes{
+  overflow: hidden;
+  .message-icon {
+    float: left;
+  }
+  .message-box {
+    float: left;
+    &:before{
+      content: "";
+      position: absolute;
+      top:10px;
+      left: -8px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 8px 6px 0;
+      border-color: transparent rgba(255, 255, 255, 0.8) transparent transparent;
+    }
+  }
+}
+.right-mes {
+  overflow: hidden;
+  .message-icon {
+    float: right;
+  }
+  .message-box {
+    float: right;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: -8px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 8px;
+      border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+    }
+  }
 }
