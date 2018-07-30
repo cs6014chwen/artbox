@@ -76,7 +76,9 @@ select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px soli
 
 .friends .ec { width: 28%; right: 2%; bottom: -18%; -webkit-animation-delay: 3.6s; animation-delay: 3.6s; }
 
-.friends .coco { width: 10%; right: 28%; bottom: 15%; -webkit-animation-name: showBottom; animation-name: showBottom; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4s; animation-delay: 4s; -webkit-animation-fill-mode: backwards; animation-fill-mode: backwards; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+.friends .coco { width: 10%; right: 28%; bottom: 15%; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4s; animation-delay: 4s; }
+
+.friends .coco img { -webkit-animation: shake; animation: shake; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 
 .enter-box { margin-top: -10%; position: relative; width: 100%; bottom: 0; right: 0; z-index: 9999; }
 
@@ -319,3 +321,21 @@ select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px soli
 @keyframes flashing { 0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; } }
+
+@-webkit-keyframes shake { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+  15% { -webkit-transform: translate(5px, 5px); transform: translate(5px, 5px); }
+  30% { -webkit-transform: translate(-7px, -7px); transform: translate(-7px, -7px); }
+  45% { -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); }
+  60% { -webkit-transform: translate(-5px, 6px); transform: translate(-5px, 6px); }
+  75% { -webkit-transform: translate(-7px, -1px); transform: translate(-7px, -1px); }
+  90% { -webkit-transform: translate(-2px, -7px); transform: translate(-2px, -7px); }
+  100% { -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+
+@keyframes shake { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+  15% { -webkit-transform: translate(5px, 5px); transform: translate(5px, 5px); }
+  30% { -webkit-transform: translate(-7px, -7px); transform: translate(-7px, -7px); }
+  45% { -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); }
+  60% { -webkit-transform: translate(-5px, 6px); transform: translate(-5px, 6px); }
+  75% { -webkit-transform: translate(-7px, -1px); transform: translate(-7px, -1px); }
+  90% { -webkit-transform: translate(-2px, -7px); transform: translate(-2px, -7px); }
+  100% { -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }

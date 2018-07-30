@@ -151,11 +151,13 @@
     width: 10%;
     right: 28%;
     bottom: 15%;
-    animation-name: showBottom;
     animation-duration: 1s;
     animation-delay:4s;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-in-out;
+    img{
+      animation: shake;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+    }
   }
 }
 
