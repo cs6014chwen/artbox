@@ -3,7 +3,6 @@ $(document).ready(function () {
   var birthdayDate = $("#q_birthday input:text");
       imgSite = $("#q_site :selected");
       roomEC = $("#roomNumber input:text");
-      poeole = $("#peopleNumber input:text");
       food = $("#cocoEat input[name=coco]:checked");
   
   $("#q_birthday").submit(function(){
@@ -73,9 +72,11 @@ $(document).ready(function () {
     }
   });
 
-  $("#peopleNumber").submit(function () {
-    var number = $("input:text", this).val();
-    if (number == "17") {
+  $("#imgsLeo").submit(function () {
+    var imgs = $('input[name="imgLeo"]:checkbox:checked').map(function () {
+      return $(this).val();
+    }).get().join(',');
+    if (imgs == "1,3,5,6,7,9,12") {
       swal(
         '您真是太厲害了!',
         '全部算對囉!',
@@ -86,7 +87,7 @@ $(document).ready(function () {
     } else {
       swal(
         '不對喔!',
-        '你確定都是真正的嗎?再仔細看看吧!',
+        '您大一是這些嗎?回第一個從看吧',
         'error'
       );
       $("#questionFour").removeClass("show");
@@ -94,9 +95,9 @@ $(document).ready(function () {
       birthdayDate.val("");
       imgSite.val("");
       roomEC.val("");
-      people.val("");
     }
   });
+  
   $("#cocoEat").submit(function () {
     var number = $("input[name=coco]:checked", this).val();
     if (number == "pea") {
@@ -118,7 +119,6 @@ $(document).ready(function () {
       birthdayDate.val("");
       imgSite.val("");
       roomEC.val("");
-      people.val("");
       food.val("");
     }
   });

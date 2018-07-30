@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* remember to define focus styles! */
 :focus { outline: 0; }
 
-body { line-height: 1; color: #fff; }
+body { line-height: 1; color: #999; }
 
 h2 { font-size: 1.2rem; line-height: 2; color: #333; }
 
@@ -164,7 +164,7 @@ select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px soli
 
 .q-box .q-header .title .q-img { float: left; width: 50%; height: auto; }
 
-.q-box .q-header .title .number { float: right; font-weight: 800; font-size: 7vw; }
+.q-box .q-header .title .number { float: right; font-weight: 800; font-size: 7vw; color: #fff; }
 
 .q-box h2 { padding-top: 3%; font-weight: 600; padding-bottom: 5%; }
 
@@ -186,9 +186,21 @@ select { font-size: 1.2em; padding: 5px 15px; line-height: 1.5; border: 1px soli
 
 .q-box .q-radio input:checked + label { display: block; border: 5px solid #cf0c0c; border-radius: 50%; }
 
+.q-box .q-checkbox input[type="checkbox"] { opacity: 0; }
+
+.q-box .q-checkbox input:checked + label { width: 100%; }
+
+.q-box .q-checkbox input:checked + label img { border: 5px solid #cf0c0c; }
+
 .q-box .img-radio { position: relative; display: inline-block; width: calc(50% - 12px); color: #361b81; padding: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .q-box .img-radio img { width: 90%; }
+
+.q-box .check-img { width: calc(50% - 12px); position: relative; display: inline-block; vertical-align: top; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.q-box .check-img label { width: 100%; display: block; }
+
+.q-box .check-img img { width: 90%; border: 5px solid transparent; }
 
 .show { display: block; }
 

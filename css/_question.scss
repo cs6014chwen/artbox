@@ -45,6 +45,7 @@
         float: right;
         font-weight: 800;
         font-size: 7vw;
+        color: #fff;
       }
     }
   }
@@ -99,6 +100,20 @@
       border-radius: 50%;
     }
   }
+  .q-checkbox{
+    input {
+      &[type="checkbox"] {
+        opacity: 0;
+      }
+      &:checked+label {
+        width: 100%;
+        img{
+          border: 5px solid rgb(207, 12, 12);
+        }
+      }
+    }
+
+  }
   .img-radio {
     position: relative;
     display: inline-block;
@@ -108,6 +123,21 @@
     box-sizing: border-box;
     img{
       width: 90%;
+    }
+  }
+  .check-img{
+    width: calc(50% - 12px);
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    label{
+      width: 100%;
+      display: block;
+    }
+    img{
+      width: 90%;
+      border: 5px solid transparent;
     }
   }
 }
