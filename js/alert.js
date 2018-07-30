@@ -78,8 +78,8 @@ $(document).ready(function () {
     }).get().join(',');
     if (imgs == "1,3,5,6,7,9,12") {
       swal(
-        '您真是太厲害了!',
-        '全部算對囉!',
+        '原來您還記得!',
+        '好棒棒喔!',
         'success'
       );
       $("#questionFour").removeClass("show");
@@ -87,7 +87,7 @@ $(document).ready(function () {
     } else {
       swal(
         '不對喔!',
-        '您大一是這些嗎?回第一個從看吧',
+        '您真的不知道嗎?去找相關人士求救吧!',
         'error'
       );
       // $("#questionFour").removeClass("show");
