@@ -41,10 +41,10 @@ $(document).ready(function () {
         '睡太多不記得了嗎?',
         'error'
       );
-      $("#questionTwo").removeClass("show");
-      $("#questionOne").addClass("show");
-      birthdayDate.val("");
-      imgSite.val("");
+      // $("#questionTwo").removeClass("show");
+      // $("#questionOne").addClass("show");
+      // birthdayDate.val("");
+      // imgSite.val("");
     }
   });
 
@@ -64,11 +64,11 @@ $(document).ready(function () {
         '回第一個吧',
         'error'
       );
-      $("#questionThree").removeClass("show");
-      $("#questionOne").addClass("show");
-      birthdayDate.val("");
-      imgSite.val("");
-      roomEC.val("");
+      // $("#questionThree").removeClass("show");
+      // $("#questionOne").addClass("show");
+      // birthdayDate.val("");
+      // imgSite.val("");
+      // roomEC.val("");
     }
   });
 
@@ -90,11 +90,11 @@ $(document).ready(function () {
         '您大一是這些嗎?回第一個從看吧',
         'error'
       );
-      $("#questionFour").removeClass("show");
-      $("#questionOne").addClass("show");
-      birthdayDate.val("");
-      imgSite.val("");
-      roomEC.val("");
+      // $("#questionFour").removeClass("show");
+      // $("#questionOne").addClass("show");
+      // birthdayDate.val("");
+      // imgSite.val("");
+      // roomEC.val("");
     }
   });
   
@@ -114,12 +114,12 @@ $(document).ready(function () {
         '小關在你背後看著你',
         'error'
       );
-      $("#questionFive").removeClass("show");
-      $("#questionOne").addClass("show");
-      birthdayDate.val("");
-      imgSite.val("");
-      roomEC.val("");
-      food.val("");
+      // $("#questionFive").removeClass("show");
+      // $("#questionOne").addClass("show");
+      // birthdayDate.val("");
+      // imgSite.val("");
+      // roomEC.val("");
+      // food.val("");
     }
   });
   $("#connection").submit(function () {
