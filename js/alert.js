@@ -111,7 +111,7 @@ $(document).ready(function () {
     } else {
       swal(
         '小關不吃喔!',
-        '懲罰你回第一題'',
+        '懲罰你回第一題',
         'error'
       );
       $("#questionFive").removeClass("show");
