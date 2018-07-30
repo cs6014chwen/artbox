@@ -53,15 +53,15 @@ $(document).ready(function () {
     if (number == 727) {
       swal(
         '好棒!',
-        '阿母加法算對了',
+        '你有去找洢浠的噗浪嗎?其實最多也只有六種組合',
         'success'
       );
       $("#questionThree").removeClass("show");
       $("#questionFour").addClass("show");
     } else {
       swal(
-        '哈哈哈哈',
-        '回第一個吧',
+        '告訴你一個方法',
+        '去找洢浠的噗浪,某年阿殘的生日賀圖',
         'error'
       );
       // $("#questionThree").removeClass("show");
@@ -111,15 +111,15 @@ $(document).ready(function () {
     } else {
       swal(
         '小關不吃喔!',
-        '小關在你背後看著你',
+        '懲罰你回第一題'',
         'error'
       );
-      // $("#questionFive").removeClass("show");
-      // $("#questionOne").addClass("show");
-      // birthdayDate.val("");
-      // imgSite.val("");
-      // roomEC.val("");
-      // food.val("");
+      $("#questionFive").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSite.val("");
+      roomEC.val("");
+      food.val("");
     }
   });
   $("#connection").submit(function () {
