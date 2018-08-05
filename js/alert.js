@@ -41,10 +41,10 @@ $(document).ready(function () {
         '睡太多不記得了嗎?',
         'error'
       );
-      // $("#questionTwo").removeClass("show");
-      // $("#questionOne").addClass("show");
-      // birthdayDate.val("");
-      // imgSite.val("");
+      $("#questionTwo").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSite.val("");
     }
   });
 
@@ -64,11 +64,11 @@ $(document).ready(function () {
         '去找洢浠的噗浪,某年阿殘的生日賀圖',
         'error'
       );
-      // $("#questionThree").removeClass("show");
-      // $("#questionOne").addClass("show");
-      // birthdayDate.val("");
-      // imgSite.val("");
-      // roomEC.val("");
+      $("#questionThree").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSite.val("");
+      roomEC.val("");
     }
   });
 
@@ -90,11 +90,11 @@ $(document).ready(function () {
         '您真的不知道嗎?去找相關人士求救吧!',
         'error'
       );
-      // $("#questionFour").removeClass("show");
-      // $("#questionOne").addClass("show");
-      // birthdayDate.val("");
-      // imgSite.val("");
-      // roomEC.val("");
+      $("#questionFour").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSite.val("");
+      roomEC.val("");
     }
   });
   
@@ -138,12 +138,12 @@ $(document).ready(function () {
         '請把圖連起來看看',
         'error'
       );
-      // $("#questionSix").removeClass("show");
-      // $("#questionOne").addClass("show");
-      // birthdayDate.val("");
-      // imgSite.val("");
-      // roomEC.val("");
-      // food.val("");
+      $("#questionSix").removeClass("show");
+      $("#questionOne").addClass("show");
+      birthdayDate.val("");
+      imgSite.val("");
+      roomEC.val("");
+      food.val("");
     }
   });
   $("#gameEnd").submit(function () {
